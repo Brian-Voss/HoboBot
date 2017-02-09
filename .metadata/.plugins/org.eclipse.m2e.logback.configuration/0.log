@@ -2,3 +2,386 @@
 2017-02-06 14:27:44,675 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2017-02-06 18:46:06,367 [Worker-14] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2017-02-06 20:36:41,211 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-09 09:11:33,409 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-02-09 15:26:03,090 [Worker-143] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM Z:\workspace\HoboBot\HoboBot\POM.XML: input contained no data @ 
+ for project  at Z:\workspace\HoboBot\HoboBot\POM.XML
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM Z:\workspace\HoboBot\HoboBot\POM.XML: input contained no data @ 
+ for project  at Z:\workspace\HoboBot\HoboBot\POM.XML
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1050) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM Z:\workspace\HoboBot\HoboBot\POM.XML: input contained no data @ 
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:594) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:269) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 15 common frames omitted
+2017-02-09 15:27:14,529 [Worker-143] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM Z:\workspace\HoboBot\HoboBot\pom.xml: input contained no data @ 
+ for project  at Z:\workspace\HoboBot\HoboBot\pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM Z:\workspace\HoboBot\HoboBot\pom.xml: input contained no data @ 
+ for project  at Z:\workspace\HoboBot\HoboBot\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1050) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM Z:\workspace\HoboBot\HoboBot\pom.xml: input contained no data @ 
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:594) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:269) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 15 common frames omitted
+2017-02-09 15:27:17,542 [Worker-143] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM Z:\workspace\HoboBot\HoboBot\pom.xml: input contained no data @ 
+ for project  at Z:\workspace\HoboBot\HoboBot\pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM Z:\workspace\HoboBot\HoboBot\pom.xml: input contained no data @ 
+ for project  at Z:\workspace\HoboBot\HoboBot\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.DependencyTreePage$1.run(DependencyTreePage.java:216) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM Z:\workspace\HoboBot\HoboBot\pom.xml: input contained no data @ 
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:594) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:269) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 15 common frames omitted
+2017-02-09 15:27:17,550 [Worker-143] ERROR o.e.m.editor.pom.DependencyTreePage - Unable to read maven project. Dependencies not updated.
+2017-02-09 15:27:18,377 [Worker-141] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM Z:\workspace\HoboBot\HoboBot\pom.xml: input contained no data @ 
+ for project  at Z:\workspace\HoboBot\HoboBot\pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM Z:\workspace\HoboBot\HoboBot\pom.xml: input contained no data @ 
+ for project  at Z:\workspace\HoboBot\HoboBot\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$LoadEffectivePomJob.run(MavenPomEditor.java:463) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM Z:\workspace\HoboBot\HoboBot\pom.xml: input contained no data @ 
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:594) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:269) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 14 common frames omitted
+2017-02-09 15:28:53,604 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/github/austinv11/Discord4j/2.6.1/Discord4j-2.6.1.pom
+2017-02-09 15:28:54,060 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://jitpack.io/com/github/austinv11/Discord4j/2.6.1/Discord4j-2.6.1.pom
+2017-02-09 15:28:54,211 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom
+2017-02-09 15:28:54,340 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom
+2017-02-09 15:28:54,475 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom
+2017-02-09 15:28:54,628 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom
+2017-02-09 15:28:54,758 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.pom
+2017-02-09 15:28:54,885 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.pom
+2017-02-09 15:28:55,045 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-core/4.4.5/httpcomponents-core-4.4.5.pom
+2017-02-09 15:28:55,220 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-core/4.4.5/httpcomponents-core-4.4.5.pom
+2017-02-09 15:28:55,366 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/httpcomponents/project/7/project-7.pom
+2017-02-09 15:28:55,520 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/httpcomponents/project/7/project-7.pom
+2017-02-09 15:28:55,661 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/apache/13/apache-13.pom
+2017-02-09 15:28:55,795 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/apache/13/apache-13.pom
+2017-02-09 15:28:55,916 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom
+2017-02-09 15:28:56,042 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom
+2017-02-09 15:28:56,176 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom
+2017-02-09 15:28:56,290 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom
+2017-02-09 15:28:56,458 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom
+2017-02-09 15:28:56,591 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom
+2017-02-09 15:28:56,721 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-core/4.4.4/httpcomponents-core-4.4.4.pom
+2017-02-09 15:28:56,843 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-core/4.4.4/httpcomponents-core-4.4.4.pom
+2017-02-09 15:28:56,973 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/commons-logging/commons-logging/1.2/commons-logging-1.2.pom
+2017-02-09 15:28:57,092 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/commons-logging/commons-logging/1.2/commons-logging-1.2.pom
+2017-02-09 15:28:57,213 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/commons/commons-parent/34/commons-parent-34.pom
+2017-02-09 15:28:57,390 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/commons/commons-parent/34/commons-parent-34.pom
+2017-02-09 15:28:57,533 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/commons-codec/commons-codec/1.9/commons-codec-1.9.pom
+2017-02-09 15:28:57,660 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/commons-codec/commons-codec/1.9/commons-codec-1.9.pom
+2017-02-09 15:28:57,781 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/commons/commons-parent/32/commons-parent-32.pom
+2017-02-09 15:28:58,005 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/commons/commons-parent/32/commons-parent-32.pom
+2017-02-09 15:28:58,143 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.pom
+2017-02-09 15:28:58,269 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.pom
+2017-02-09 15:28:58,401 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/commons-io/commons-io/2.5/commons-io-2.5.pom
+2017-02-09 15:28:58,523 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/commons-io/commons-io/2.5/commons-io-2.5.pom
+2017-02-09 15:28:58,644 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/commons/commons-parent/39/commons-parent-39.pom
+2017-02-09 15:28:58,808 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/commons/commons-parent/39/commons-parent-39.pom
+2017-02-09 15:28:58,938 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/apache/16/apache-16.pom
+2017-02-09 15:28:59,051 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/apache/16/apache-16.pom
+2017-02-09 15:28:59,173 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/eclipse/jetty/websocket/websocket-client/9.3.11.v20160721/websocket-client-9.3.11.v20160721.pom
+2017-02-09 15:28:59,286 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/eclipse/jetty/websocket/websocket-client/9.3.11.v20160721/websocket-client-9.3.11.v20160721.pom
+2017-02-09 15:28:59,416 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/eclipse/jetty/websocket/websocket-parent/9.3.11.v20160721/websocket-parent-9.3.11.v20160721.pom
+2017-02-09 15:28:59,549 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/eclipse/jetty/websocket/websocket-parent/9.3.11.v20160721/websocket-parent-9.3.11.v20160721.pom
+2017-02-09 15:28:59,691 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/eclipse/jetty/jetty-project/9.3.11.v20160721/jetty-project-9.3.11.v20160721.pom
+2017-02-09 15:28:59,822 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/eclipse/jetty/jetty-project/9.3.11.v20160721/jetty-project-9.3.11.v20160721.pom
+2017-02-09 15:28:59,983 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/eclipse/jetty/jetty-parent/25/jetty-parent-25.pom
+2017-02-09 15:29:00,110 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/eclipse/jetty/jetty-parent/25/jetty-parent-25.pom
+2017-02-09 15:29:00,246 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/eclipse/jetty/jetty-util/9.3.11.v20160721/jetty-util-9.3.11.v20160721.pom
+2017-02-09 15:29:00,395 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/eclipse/jetty/jetty-util/9.3.11.v20160721/jetty-util-9.3.11.v20160721.pom
+2017-02-09 15:29:00,536 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/eclipse/jetty/jetty-io/9.3.11.v20160721/jetty-io-9.3.11.v20160721.pom
+2017-02-09 15:29:00,645 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/eclipse/jetty/jetty-io/9.3.11.v20160721/jetty-io-9.3.11.v20160721.pom
+2017-02-09 15:29:00,768 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/eclipse/jetty/websocket/websocket-common/9.3.11.v20160721/websocket-common-9.3.11.v20160721.pom
+2017-02-09 15:29:00,878 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/eclipse/jetty/websocket/websocket-common/9.3.11.v20160721/websocket-common-9.3.11.v20160721.pom
+2017-02-09 15:29:01,059 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/eclipse/jetty/websocket/websocket-api/9.3.11.v20160721/websocket-api-9.3.11.v20160721.pom
+2017-02-09 15:29:01,175 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/eclipse/jetty/websocket/websocket-api/9.3.11.v20160721/websocket-api-9.3.11.v20160721.pom
+2017-02-09 15:29:01,331 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/net/jodah/typetools/0.4.7/typetools-0.4.7.pom
+2017-02-09 15:29:01,442 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/net/jodah/typetools/0.4.7/typetools-0.4.7.pom
+2017-02-09 15:29:01,561 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+2017-02-09 15:29:01,687 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+2017-02-09 15:29:01,818 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom
+2017-02-09 15:29:01,940 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom
+2017-02-09 15:29:02,071 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/commons/commons-parent/37/commons-parent-37.pom
+2017-02-09 15:29:02,198 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/commons/commons-parent/37/commons-parent-37.pom
+2017-02-09 15:29:02,326 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/com/google/code/gson/gson/2.7/gson-2.7.pom
+2017-02-09 15:29:02,445 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/google/code/gson/gson/2.7/gson-2.7.pom
+2017-02-09 15:29:02,566 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/com/google/code/gson/gson-parent/2.7/gson-parent-2.7.pom
+2017-02-09 15:29:02,700 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/google/code/gson/gson-parent/2.7/gson-parent-2.7.pom
+2017-02-09 15:29:02,816 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/net/java/dev/jna/jna/4.2.2/jna-4.2.2.pom
+2017-02-09 15:29:02,920 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/net/java/dev/jna/jna/4.2.2/jna-4.2.2.pom
+2017-02-09 15:29:03,058 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/com/googlecode/soundlibs/mp3spi/1.9.5-2/mp3spi-1.9.5-2.pom
+2017-02-09 15:29:03,185 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/googlecode/soundlibs/mp3spi/1.9.5-2/mp3spi-1.9.5-2.pom
+2017-02-09 15:29:03,308 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/com/googlecode/soundlibs/soundlibs/1.3/soundlibs-1.3.pom
+2017-02-09 15:29:03,420 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/googlecode/soundlibs/soundlibs/1.3/soundlibs-1.3.pom
+2017-02-09 15:29:03,553 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/com/googlecode/soundlibs/jlayer/1.0.1-2/jlayer-1.0.1-2.pom
+2017-02-09 15:29:03,665 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/googlecode/soundlibs/jlayer/1.0.1-2/jlayer-1.0.1-2.pom
+2017-02-09 15:29:03,781 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/junit/junit/3.8.2/junit-3.8.2.pom
+2017-02-09 15:29:03,892 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/junit/junit/3.8.2/junit-3.8.2.pom
+2017-02-09 15:29:04,036 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/com/googlecode/soundlibs/tritonus-share/0.3.7-3/tritonus-share-0.3.7-3.pom
+2017-02-09 15:29:04,165 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/googlecode/soundlibs/tritonus-share/0.3.7-3/tritonus-share-0.3.7-3.pom
+2017-02-09 15:29:04,299 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/jcraft/jorbis/0.0.17/jorbis-0.0.17.pom
+2017-02-09 15:29:04,422 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/jcraft/jorbis/0.0.17/jorbis-0.0.17.pom
+2017-02-09 15:29:04,553 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/jflac/jflac/1.3/jflac-1.3.pom
+2017-02-09 15:29:04,685 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/jflac/jflac/1.3/jflac-1.3.pom
+2017-02-09 15:29:04,740 [Worker-146] INFO  o.e.m.i.launch.MavenLaunchDelegate - Z:\workspace\HoboBot\HoboBot
+2017-02-09 15:29:04,740 [Worker-146] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B test
+2017-02-09 15:29:04,822 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/tritonus/tritonus-dsp/0.3.6/tritonus-dsp-0.3.6.pom
+2017-02-09 15:29:04,956 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/tritonus/tritonus-dsp/0.3.6/tritonus-dsp-0.3.6.pom
+2017-02-09 15:29:05,104 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/luaj/luaj-jse/3.0.1/luaj-jse-3.0.1.pom
+2017-02-09 15:29:05,222 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/luaj/luaj-jse/3.0.1/luaj-jse-3.0.1.pom
+2017-02-09 15:29:05,351 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/com/stanfy/gson-xml-java/0.1.7/gson-xml-java-0.1.7.pom
+2017-02-09 15:29:05,480 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/stanfy/gson-xml-java/0.1.7/gson-xml-java-0.1.7.pom
+2017-02-09 15:29:05,608 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom
+2017-02-09 15:29:05,724 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom
+2017-02-09 15:29:05,841 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/com/google/code/gson/gson/2.2.2/gson-2.2.2.pom
+2017-02-09 15:29:05,954 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/google/code/gson/gson/2.2.2/gson-2.2.2.pom
+2017-02-09 15:29:06,076 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/ogce/xpp3/1.1.6/xpp3-1.1.6.pom
+2017-02-09 15:29:06,192 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/ogce/xpp3/1.1.6/xpp3-1.1.6.pom
+2017-02-09 15:29:06,313 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/junit/junit/4.7/junit-4.7.pom
+2017-02-09 15:29:06,437 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/junit/junit/4.7/junit-4.7.pom
+2017-02-09 15:29:06,549 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/jakarta-regexp/jakarta-regexp/1.4/jakarta-regexp-1.4.pom
+2017-02-09 15:29:06,657 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/jakarta-regexp/jakarta-regexp/1.4/jakarta-regexp-1.4.pom
+2017-02-09 15:29:06,761 [DefaultMetadataResolver-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/json/json/maven-metadata.xml
+2017-02-09 15:29:06,790 [DefaultMetadataResolver-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/json/json/maven-metadata.xml
+2017-02-09 15:29:06,791 [DefaultMetadataResolver-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/json/json/maven-metadata.xml
+2017-02-09 15:29:06,843 [DefaultMetadataResolver-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://jitpack.io/org/json/json/maven-metadata.xml
+2017-02-09 15:29:06,908 [DefaultMetadataResolver-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/json/json/maven-metadata.xml
+2017-02-09 15:29:07,031 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/json/json/20160810/json-20160810.pom
+2017-02-09 15:29:07,227 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/json/json/20160810/json-20160810.pom
+2017-02-09 15:29:07,346 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+2017-02-09 15:29:07,462 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+2017-02-09 15:29:07,689 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/jsoup/jsoup/1.10.1/jsoup-1.10.1.pom
+2017-02-09 15:29:08,029 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/jsoup/jsoup/1.10.1/jsoup-1.10.1.pom
+2017-02-09 15:29:09,064 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/github/austinv11/Discord4j/2.6.1/Discord4j-2.6.1.jar
+2017-02-09 15:29:09,204 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar
+2017-02-09 15:29:09,444 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar
+2017-02-09 15:29:10,724 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.jar
+2017-02-09 15:29:10,980 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.jar
+2017-02-09 15:29:11,211 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar
+2017-02-09 15:29:11,430 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar
+2017-02-09 15:29:11,539 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+2017-02-09 15:29:11,770 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+2017-02-09 15:29:12,041 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
+2017-02-09 15:29:12,185 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
+2017-02-09 15:29:12,314 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar
+2017-02-09 15:29:12,497 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar
+2017-02-09 15:29:12,708 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/commons-io/commons-io/2.5/commons-io-2.5.jar
+2017-02-09 15:29:12,872 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/commons-io/commons-io/2.5/commons-io-2.5.jar
+2017-02-09 15:29:13,136 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/eclipse/jetty/websocket/websocket-client/9.3.11.v20160721/websocket-client-9.3.11.v20160721.jar
+2017-02-09 15:29:13,302 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/eclipse/jetty/websocket/websocket-client/9.3.11.v20160721/websocket-client-9.3.11.v20160721.jar
+2017-02-09 15:29:13,539 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/eclipse/jetty/jetty-util/9.3.11.v20160721/jetty-util-9.3.11.v20160721.jar
+2017-02-09 15:29:13,698 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/eclipse/jetty/jetty-util/9.3.11.v20160721/jetty-util-9.3.11.v20160721.jar
+2017-02-09 15:29:13,801 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/eclipse/jetty/jetty-io/9.3.11.v20160721/jetty-io-9.3.11.v20160721.jar
+2017-02-09 15:29:14,043 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/eclipse/jetty/jetty-io/9.3.11.v20160721/jetty-io-9.3.11.v20160721.jar
+2017-02-09 15:29:14,149 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/eclipse/jetty/websocket/websocket-common/9.3.11.v20160721/websocket-common-9.3.11.v20160721.jar
+2017-02-09 15:29:14,328 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/eclipse/jetty/websocket/websocket-common/9.3.11.v20160721/websocket-common-9.3.11.v20160721.jar
+2017-02-09 15:29:14,451 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/eclipse/jetty/websocket/websocket-api/9.3.11.v20160721/websocket-api-9.3.11.v20160721.jar
+2017-02-09 15:29:14,668 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/eclipse/jetty/websocket/websocket-api/9.3.11.v20160721/websocket-api-9.3.11.v20160721.jar
+2017-02-09 15:29:14,814 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/net/jodah/typetools/0.4.7/typetools-0.4.7.jar
+2017-02-09 15:29:14,953 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/net/jodah/typetools/0.4.7/typetools-0.4.7.jar
+2017-02-09 15:29:15,149 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar
+2017-02-09 15:29:15,360 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar
+2017-02-09 15:29:16,239 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/com/google/code/gson/gson/2.7/gson-2.7.jar
+2017-02-09 15:29:16,380 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/google/code/gson/gson/2.7/gson-2.7.jar
+2017-02-09 15:29:17,101 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/net/java/dev/jna/jna/4.2.2/jna-4.2.2.jar
+2017-02-09 15:29:17,378 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/net/java/dev/jna/jna/4.2.2/jna-4.2.2.jar
+2017-02-09 15:29:17,519 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/com/googlecode/soundlibs/mp3spi/1.9.5-2/mp3spi-1.9.5-2.jar
+2017-02-09 15:29:17,763 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/googlecode/soundlibs/mp3spi/1.9.5-2/mp3spi-1.9.5-2.jar
+2017-02-09 15:29:17,882 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/com/googlecode/soundlibs/jlayer/1.0.1-2/jlayer-1.0.1-2.jar
+2017-02-09 15:29:18,125 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/googlecode/soundlibs/jlayer/1.0.1-2/jlayer-1.0.1-2.jar
+2017-02-09 15:29:18,227 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/jcraft/jorbis/0.0.17/jorbis-0.0.17.jar
+2017-02-09 15:29:18,350 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/jcraft/jorbis/0.0.17/jorbis-0.0.17.jar
+2017-02-09 15:29:19,519 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/jflac/jflac/1.3/jflac-1.3.jar
+2017-02-09 15:29:19,812 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/jflac/jflac/1.3/jflac-1.3.jar
+2017-02-09 15:29:19,917 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/com/googlecode/soundlibs/tritonus-share/0.3.7-3/tritonus-share-0.3.7-3.jar
+2017-02-09 15:29:20,040 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/googlecode/soundlibs/tritonus-share/0.3.7-3/tritonus-share-0.3.7-3.jar
+2017-02-09 15:29:20,167 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/tritonus/tritonus-dsp/0.3.6/tritonus-dsp-0.3.6.jar
+2017-02-09 15:29:20,320 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/tritonus/tritonus-dsp/0.3.6/tritonus-dsp-0.3.6.jar
+2017-02-09 15:29:20,569 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/luaj/luaj-jse/3.0.1/luaj-jse-3.0.1.jar
+2017-02-09 15:29:20,725 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/luaj/luaj-jse/3.0.1/luaj-jse-3.0.1.jar
+2017-02-09 15:29:20,824 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/com/stanfy/gson-xml-java/0.1.7/gson-xml-java-0.1.7.jar
+2017-02-09 15:29:20,975 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/com/stanfy/gson-xml-java/0.1.7/gson-xml-java-0.1.7.jar
+2017-02-09 15:29:21,072 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar
+2017-02-09 15:29:21,188 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar
+2017-02-09 15:29:21,786 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/ogce/xpp3/1.1.6/xpp3-1.1.6.jar
+2017-02-09 15:29:21,957 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/ogce/xpp3/1.1.6/xpp3-1.1.6.jar
+2017-02-09 15:29:23,001 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/junit/junit/4.7/junit-4.7.jar
+2017-02-09 15:29:23,140 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/junit/junit/4.7/junit-4.7.jar
+2017-02-09 15:29:23,249 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/jakarta-regexp/jakarta-regexp/1.4/jakarta-regexp-1.4.jar
+2017-02-09 15:29:23,465 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/jakarta-regexp/jakarta-regexp/1.4/jakarta-regexp-1.4.jar
+2017-02-09 15:29:23,679 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://jcenter.bintray.com/org/jsoup/jsoup/1.10.1/jsoup-1.10.1.jar
+2017-02-09 15:29:24,268 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://jcenter.bintray.com/org/jsoup/jsoup/1.10.1/jsoup-1.10.1.jar
+2017-02-09 15:29:26,057 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://jitpack.io/com/github/austinv11/Discord4j/2.6.1/Discord4j-2.6.1.jar
+2017-02-09 15:29:26,661 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://jitpack.io/com/github/austinv11/Discord4j/2.6.1/Discord4j-2.6.1.jar
+2017-02-09 15:29:26,719 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/json/json/20160810/json-20160810.jar
+2017-02-09 15:29:26,751 [Worker-145] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/json/json/20160810/json-20160810.jar
+2017-02-09 15:32:28,572 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.pom
+2017-02-09 15:32:28,586 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.pom
+2017-02-09 15:32:28,605 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.pom
+2017-02-09 15:32:29,006 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/slf4j/slf4j-parent/1.7.12/slf4j-parent-1.7.12.pom
+2017-02-09 15:32:29,019 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.12/slf4j-parent-1.7.12.pom
+2017-02-09 15:32:29,040 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.12/slf4j-parent-1.7.12.pom
+2017-02-09 15:32:29,441 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.pom
+2017-02-09 15:32:29,454 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.pom
+2017-02-09 15:32:29,475 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.pom
+2017-02-09 15:32:29,876 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/apache/httpcomponents/httpcomponents-core/4.4.1/httpcomponents-core-4.4.1.pom
+2017-02-09 15:32:29,889 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.1/httpcomponents-core-4.4.1.pom
+2017-02-09 15:32:29,912 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.1/httpcomponents-core-4.4.1.pom
+2017-02-09 15:32:30,314 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/apache/httpcomponents/project/7/project-7.pom
+2017-02-09 15:32:30,731 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.pom
+2017-02-09 15:32:30,744 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.pom
+2017-02-09 15:32:30,763 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.pom
+2017-02-09 15:32:31,163 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/junit/junit/4.10/junit-4.10.pom
+2017-02-09 15:32:31,177 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.pom
+2017-02-09 15:32:31,193 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.pom
+2017-02-09 15:32:31,593 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+2017-02-09 15:32:31,606 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+2017-02-09 15:32:31,623 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+2017-02-09 15:32:32,028 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+2017-02-09 15:32:32,039 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+2017-02-09 15:32:32,060 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+2017-02-09 15:32:32,461 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.pom
+2017-02-09 15:32:32,474 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.pom
+2017-02-09 15:32:32,496 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.pom
+2017-02-09 15:32:32,896 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/apache/httpcomponents/httpcomponents-client/4.5/httpcomponents-client-4.5.pom
+2017-02-09 15:32:32,909 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5/httpcomponents-client-4.5.pom
+2017-02-09 15:32:32,936 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5/httpcomponents-client-4.5.pom
+2017-02-09 15:32:33,343 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/commons-logging/commons-logging/1.2/commons-logging-1.2.pom
+2017-02-09 15:32:33,756 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/apache/commons/commons-parent/34/commons-parent-34.pom
+2017-02-09 15:32:34,175 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/commons-codec/commons-codec/1.9/commons-codec-1.9.pom
+2017-02-09 15:32:34,586 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/apache/commons/commons-parent/32/commons-parent-32.pom
+2017-02-09 15:32:35,002 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/java-websocket/Java-WebSocket/1.3.0/Java-WebSocket-1.3.0.pom
+2017-02-09 15:32:35,024 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/java-websocket/Java-WebSocket/1.3.0/Java-WebSocket-1.3.0.pom
+2017-02-09 15:32:35,045 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/java-websocket/Java-WebSocket/1.3.0/Java-WebSocket-1.3.0.pom
+2017-02-09 15:32:35,446 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+2017-02-09 15:32:35,645 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2017-02-09 15:32:35,858 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/slf4j/slf4j-simple/1.7.12/slf4j-simple-1.7.12.pom
+2017-02-09 15:32:35,869 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-simple/1.7.12/slf4j-simple-1.7.12.pom
+2017-02-09 15:32:35,888 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-simple/1.7.12/slf4j-simple-1.7.12.pom
+2017-02-09 15:32:36,296 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/net/tomp2p/opus-wrapper/1.3/opus-wrapper-1.3.pom
+2017-02-09 15:32:36,342 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/tomp2p/opus-wrapper/1.3/opus-wrapper-1.3.pom
+2017-02-09 15:32:36,743 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/abstractj/kalium/kalium/0.4.0/kalium-0.4.0.pom
+2017-02-09 15:32:36,870 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/abstractj/kalium/kalium/0.4.0/kalium-0.4.0.pom
+2017-02-09 15:32:36,920 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/abstractj/kalium/kalium/0.4.0/kalium-0.4.0.pom
+2017-02-09 15:32:37,321 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/com/github/jnr/jnr-ffi/1.0.10/jnr-ffi-1.0.10.pom
+2017-02-09 15:32:37,332 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/github/jnr/jnr-ffi/1.0.10/jnr-ffi-1.0.10.pom
+2017-02-09 15:32:37,353 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/github/jnr/jnr-ffi/1.0.10/jnr-ffi-1.0.10.pom
+2017-02-09 15:32:37,758 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/com/github/jnr/jffi/1.2.7/jffi-1.2.7.pom
+2017-02-09 15:32:37,769 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/github/jnr/jffi/1.2.7/jffi-1.2.7.pom
+2017-02-09 15:32:37,790 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/github/jnr/jffi/1.2.7/jffi-1.2.7.pom
+2017-02-09 15:32:38,194 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/ow2/asm/asm/4.0/asm-4.0.pom
+2017-02-09 15:32:38,207 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/ow2/asm/asm/4.0/asm-4.0.pom
+2017-02-09 15:32:38,223 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/ow2/asm/asm/4.0/asm-4.0.pom
+2017-02-09 15:32:38,626 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/ow2/asm/asm-parent/4.0/asm-parent-4.0.pom
+2017-02-09 15:32:38,637 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/ow2/asm/asm-parent/4.0/asm-parent-4.0.pom
+2017-02-09 15:32:38,658 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/ow2/asm/asm-parent/4.0/asm-parent-4.0.pom
+2017-02-09 15:32:39,059 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/ow2/ow2/1.3/ow2-1.3.pom
+2017-02-09 15:32:39,069 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/ow2/ow2/1.3/ow2-1.3.pom
+2017-02-09 15:32:39,091 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/ow2/ow2/1.3/ow2-1.3.pom
+2017-02-09 15:32:39,472 [Worker-144] INFO  o.e.m.i.launch.MavenLaunchDelegate - Z:\workspace\HoboBot\HoboBot
+2017-02-09 15:32:39,473 [Worker-144] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B 
+2017-02-09 15:32:39,493 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/ow2/asm/asm-commons/4.0/asm-commons-4.0.pom
+2017-02-09 15:32:39,504 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/4.0/asm-commons-4.0.pom
+2017-02-09 15:32:39,522 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/4.0/asm-commons-4.0.pom
+2017-02-09 15:32:39,926 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/ow2/asm/asm-tree/4.0/asm-tree-4.0.pom
+2017-02-09 15:32:39,944 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/4.0/asm-tree-4.0.pom
+2017-02-09 15:32:39,972 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/4.0/asm-tree-4.0.pom
+2017-02-09 15:32:40,375 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/ow2/asm/asm-analysis/4.0/asm-analysis-4.0.pom
+2017-02-09 15:32:40,394 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/4.0/asm-analysis-4.0.pom
+2017-02-09 15:32:40,421 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/4.0/asm-analysis-4.0.pom
+2017-02-09 15:32:40,881 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/ow2/asm/asm-util/4.0/asm-util-4.0.pom
+2017-02-09 15:32:40,894 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/4.0/asm-util-4.0.pom
+2017-02-09 15:32:40,911 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/4.0/asm-util-4.0.pom
+2017-02-09 15:32:41,311 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.pom
+2017-02-09 15:32:41,322 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.pom
+2017-02-09 15:32:41,340 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.pom
+2017-02-09 15:32:41,746 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/net/jodah/typetools/0.4.3/typetools-0.4.3.pom
+2017-02-09 15:32:41,759 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/jodah/typetools/0.4.3/typetools-0.4.3.pom
+2017-02-09 15:32:41,776 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/jodah/typetools/0.4.3/typetools-0.4.3.pom
+2017-02-09 15:32:42,176 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom
+2017-02-09 15:32:42,590 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/apache/commons/commons-parent/37/commons-parent-37.pom
+2017-02-09 15:32:43,006 [Worker-141] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://tomp2p.net/dev/mvn/org/apache/apache/16/apache-16.pom
+2017-02-09 15:32:58,998 [Worker-144] INFO  o.e.m.i.launch.MavenLaunchDelegate - Z:\workspace\HoboBot\HoboBot
+2017-02-09 15:32:58,998 [Worker-144] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B test
