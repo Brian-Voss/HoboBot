@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.odin.constants;
+
+/**
+ * @author Brian
+ *
+ */
+public class CommandConstants {
+
+	
+	 public static final String INITIALIZATION_WELCOME = "A Hobo wanders into your discord";
+}

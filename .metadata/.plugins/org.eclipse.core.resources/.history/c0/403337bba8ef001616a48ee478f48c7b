@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package com.odin.commands;
+
+/**
+ * @author Brian
+ *
+ */
+public class CommandContainer {
+
+	private final String raw;
+	private final String beheaded;
+	private final String splitBeheaded;
+	private final String invoke;
+	private final String[] args;
+	public final messageReceivedEvent event;
+}

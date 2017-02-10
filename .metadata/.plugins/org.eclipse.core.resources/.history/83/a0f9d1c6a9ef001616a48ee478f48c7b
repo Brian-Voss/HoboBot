@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+package com.odin.commands;
+
+import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
+
+/**
+ * @author Brian
+ *
+ */
+public class CommandContainer {
+
+	private final String raw;
+	private final String beheaded;
+	private final String splitBeheaded;
+	private final String invoke;
+	private final String[] args;
+	public final MessageReceivedEvent event;
+	
+	public CommandContainer(String raw, String behead, String splitBehead, String invoke, String[] args, MessageReceivedEvent event)
+	{
+		this.raw = raw;
+		this.beheaded = behead;
+		this.splitBeheaded = splitBehead;
+		this.invoke = invoke;
+		this.args = args;
+		this.event = event;
+	}
+}

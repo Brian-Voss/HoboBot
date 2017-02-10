@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+package com.odin.commands;
+
+import java.util.ArrayList;
+
+import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
+
+/**
+ * @author Brian
+ *
+ */
+public class CommandParser {
+
+	 public CommandContainer parse(String raw, MessageReceivedEvent event)
+	 {
+		 ArrayList<String> split = new ArrayList<String>();
+		 String behead  = raw.replace('#', ' ');
+		 String[] splitBehead = behead.split(" ");
+		 for(String beheadString : splitBehead)
+		 {
+			 split.add(beheadString);
+		 }
+		 
+		 String invoke = split.get(0);
+		 String[] args = new String[](split.size() - 1);
+		 
+	 }
+}
