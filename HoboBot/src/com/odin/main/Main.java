@@ -7,9 +7,9 @@ import java.util.HashMap;
 
 import javax.security.auth.login.LoginException;
 
-import com.odin.commands.CommandParser;
 import com.odin.commands.Commands;
 import com.odin.commands.PingCommand;
+import com.odin.commands.parser.CommandParser;
 import com.odin.constants.BotConstants;
 import com.odin.constants.CommandConstants;
 import com.odin.helpers.FileHelper;

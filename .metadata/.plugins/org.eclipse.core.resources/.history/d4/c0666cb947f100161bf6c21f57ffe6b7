@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.odin.commands.rotations.commands;
+
+/**
+ * @author Brian
+ *
+ */
+public class AddRotationCommand {
+
+}

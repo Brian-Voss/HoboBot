@@ -6,4 +6,14 @@
 <fullyQualifiedTypeName name="java.io.FileFilter"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.AccountType"/>
+<fullyQualifiedTypeName name="com.odin.constants.BotConstants"/>
+<fullyQualifiedTypeName name="com.odin.listeners.ReadyListener"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.events.message.MessageReceivedEvent"/>
+<fullyQualifiedTypeName name="com.odin.commands.CommandContainer"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.odin.commands.CommandParser"/>
+<fullyQualifiedTypeName name="com.odin.constants.CommandConstants"/>
+<fullyQualifiedTypeName name="com.odin.main.Main"/>
 </qualifiedTypeNameHistroy>
