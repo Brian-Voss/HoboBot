@@ -8,7 +8,6 @@ import java.util.HashMap;
 import javax.security.auth.login.LoginException;
 
 import com.odin.commands.Commands;
-import com.odin.commands.HelpCommand;
 import com.odin.commands.PingCommand;
 import com.odin.commands.parser.CommandParser;
 import com.odin.constants.BotConstants;
@@ -47,7 +46,7 @@ public class Main {
 		jdaBuilder.addListener(new ReadyListener());
 		
 		commands.put(CommandConstants.PING_COMMAND,new PingCommand());
-		commands.put(CommandConstants.HELP_COMMAND,new HelpCommand());
+		commands.put(CommandConstants.HELP_COMMAND,new PingCommand());
 		try {
 			 jda = jdaBuilder.buildBlocking();
 		} catch (LoginException e) {

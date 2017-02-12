@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package com.odin.constants;
+
+/**
+ * @author Brian
+ *
+ */
+public class HelpConstants {
+
+	public static final String PING_COMMMAND = "Usage = !~ping";
+	public static final String DOWNLOAD_TRIGGER = "";
+	public static final String UPLOAD_TRIGGER = "";
+	public static final String CREATE_MENTOR = "";
+	public static final String DELETE_MENTOR = ""; 
+	public static final String LIST_MENTOR = "";
+	public static final String ADD_RAID_MGR = "";
+	public static final String ADD_RAID_TIME = "";
+	public static final String CHANGE_RAID_INFO = "";
+	public static final String DELETE_RAID_ADMIN = "";
+	public static final String
+	public static final String
+	public static final String
+	public static final String
+}

@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package com.odin.constants;
+
+/**
+ * @author Brian
+ *
+ */
+public class HelpConstants {
+
+	public static final String PING_COMMMAND = "Usage = !~ping";
+	public static final String DOWNLOAD_TRIGGER = "Usage = !~downloadtriggerfile <fileName>";
+	public static final String UPLOAD_TRIGGER = "Usage = !~uploadtriggerfile <fileName>";
+	public static final String CREATE_MENTOR = "Usage = !~creatementor <name> <level> <job> <ilvl>";
+	public static final String DELETE_MENTOR = "Usage = !~deletementor <name>"; 
+	public static final String LIST_MENTOR = "Usage = !~listmentors <job>";
+	public static final String ADD_RAID_MGR = "Usage = !~addraidmgr <name>";
+	public static final String ADD_RAID_TIME = "Usage = !~addraidtime <instance> <day of week> <level> <ilvl> <time> <timezone>";
+	public static final String CHANGE_RAID_INFO = "Usage = !~updateraid <instance> <day of week> <level> <ilvl> <time> <timezone>";
+	public static final String DELETE_RAID_ADMIN = "Usage = !~deleteraid <day of week>";
+	public static final String LIST_RAID_TIMES = "Usage = !~listraidtimes";
+	public static final String RAID_MGR = "Usage = !~raidmgrlogin <name>";
+	public static final String USER_RAID_SIGNUP = "Usage = !~signupforraid <instance> <day of week> <level> <ilvl> <main job> <secondary job>";
+	public static final String WHOIS_RAID_ADMIN = "Usage = !~whoisraidadmin";
+	public static final String ADD_ROTATION = "Usage = !~addrotation <user> <level> <job> <main y/n> <rotation> ";
+	public static final String DELETE_ROTATION = "Usage = !~deleterotation <user> <level> <job> <main y/n>";
+	public static final String GET_ROTATION = "Usage = !~getrotation <job>";
+	public static final String CHANGE_USER_INFO = "Usage = !~changeuserinfo <name> <main job> <main lvl> <main ilvl> <secondary job> <secondary lvl> <secondary ilvl>";
+	public static final String DELETE_USER_INFO = "Usage = !~deleteuserinfo <name>";
+	public static final String ENTER_USER_INFO = "Usage = !~enteruserinfo <name> <main job> <main lvl> <main ilvl> <secondary job> <secondary lvl> <secondary ilvl>";
+	
+}
