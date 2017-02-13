@@ -48,7 +48,6 @@ public class UploadTriggerFileCommand extends Commands {
 		{
 			event.getTextChannel().sendMessage("No attachments found").queue();
 			event.getTextChannel().sendMessage(HelpConstants.UPLOAD_TRIGGER).queue();
-			return;
 		}
 		Message.Attachment attachment = attachments.get(0);
 		String url = attachment.getUrl();
