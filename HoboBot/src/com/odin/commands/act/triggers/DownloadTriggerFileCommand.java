@@ -3,7 +3,10 @@
  */
 package com.odin.commands.act.triggers;
 
+import java.util.ArrayList;
+
 import com.odin.commands.Commands;
+import com.odin.helpers.FileHelper;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
@@ -19,7 +22,7 @@ public class DownloadTriggerFileCommand extends Commands {
 	@Override
 	public boolean called(String[] args, MessageReceivedEvent event) {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	/* (non-Javadoc)
@@ -36,8 +39,14 @@ public class DownloadTriggerFileCommand extends Commands {
 	 */
 	@Override
 	public void action(String[] args, MessageReceivedEvent event) {
-		// TODO Auto-generated method stub
-
+		FileHelper helper =  new FileHelper();
+		ArrayList<String> triggerFiles  = helper.getTriggerFile();
+		
+		for(String url : triggerFiles)
+		{
+			event.getTextChannel().sendMessage(url).queue();
+		}
+		
 	}
 
 }

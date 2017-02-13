@@ -1,0 +1,58 @@
+/**
+ * 
+ */
+package com.odin.commands.act.triggers;
+
+import java.io.File;
+import java.util.List;
+
+import com.odin.commands.Commands;
+import com.odin.handlers.FileHandler;
+
+import net.dv8tion.jda.core.entities.Message;
+import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
+
+/**
+ * @author Brian
+ *
+ */
+public class UploadTriggerFileCommand extends Commands {
+
+	/* (non-Javadoc)
+	 * @see com.odin.commands.Commands#called(java.lang.String[], net.dv8tion.jda.core.events.message.MessageReceivedEvent)
+	 */
+	@Override
+	public boolean called(String[] args, MessageReceivedEvent event) {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.odin.commands.Commands#help()
+	 */
+	@Override
+	public String help() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.odin.commands.Commands#action(java.lang.String[], net.dv8tion.jda.core.events.message.MessageReceivedEvent)
+	 */
+	@Override
+	public void action(String[] args, MessageReceivedEvent event) {
+		FileHandler fileHandler = new FileHandler();
+		List<Message.Attachment> attachments = event.getMessage().getAttachments();
+		Message.Attachment attachment = attachments.get(0);
+		String url = attachment.getUrl();
+        String proxyUrl = attachment.getProxyUrl();
+        int size = attachment.getSize();
+        String id = attachment.getId();
+        String name = attachment.getFileName();
+		fileHandler.uploadFileToDirectory(new File(url + "\\" + attachment.getFileName()), "triggers");
+		event.getTextChannel().sendMessage(event.getMessage().getAttachments().get(0).getFileName() + " Uploaded Successfully").queue();
+
+
+	}
+
+}

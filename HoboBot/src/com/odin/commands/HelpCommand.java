@@ -45,6 +45,7 @@ public class HelpCommand extends Commands {
 		help.add(HelpConstants.PING_COMMMAND);
 		help.add(HelpConstants.DOWNLOAD_TRIGGER);
 		help.add(HelpConstants.UPLOAD_TRIGGER);
+		help.add(HelpConstants.LIST_TRIGGER_FILES);
 		help.add(HelpConstants.CREATE_MENTOR);
 		help.add(HelpConstants.DELETE_MENTOR);
 		help.add(HelpConstants.LIST_MENTOR);

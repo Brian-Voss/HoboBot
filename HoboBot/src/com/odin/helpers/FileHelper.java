@@ -11,6 +11,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
@@ -34,7 +35,7 @@ public class FileHelper {
 	{
 		
 	}
-	public boolean cleanupLogFile(Calendar date)
+	public File[] getFiles()
 	{
 		//Grab all the log files from the location with the date specified
 		File directory = new File(fileLocation);
@@ -43,13 +44,12 @@ public class FileHelper {
 
 		Arrays.sort(files, LastModifiedFileComparator.LASTMODIFIED_REVERSE);
 		System.out.println("\nLast Modified Descending Order (LASTMODIFIED_REVERSE)");
-		displayFiles(files);
-		return true;
+		return files;
 
 	}
 
 	@SuppressWarnings("deprecation")
-	public static void displayFiles(File[] files) {
+	public static void displayTodaysFiles(File[] files) {
 		
 		Calendar today = Calendar.getInstance();
 		today.clear(Calendar.HOUR); today.clear(Calendar.MINUTE); today.clear(Calendar.SECOND);
@@ -60,7 +60,6 @@ public class FileHelper {
 		for (File file : files)
 		{
 			Date fileDate  = new Date(file.lastModified());
-			LocalDate fileDateFinal = LocalDate.of( fileDate.getYear(), fileDate.getMonth() , fileDate.getDay());
 			
 			if(fileDate.equals(rightNowDate))
 			{
@@ -69,8 +68,28 @@ public class FileHelper {
 		}
 	}
 	
-	  
+	public ArrayList<String> getTriggerFile()
+	{
+		ArrayList<String> fileUrls = new ArrayList<>();
+		try {
+			BufferedReader br = new BufferedReader(new FileReader("triggers.txt"));
+			
+			  // read the first line from the text file
+	        String fileRead = br.readLine();
 
+	        // loop until all lines are read
+	        while (fileRead != null)
+	        {
+	        	fileUrls.add(fileRead);
+	        	fileRead = br.readLine();
+	        }
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return fileUrls;
+	}
 	public  void parseFile()
 	{
 		try

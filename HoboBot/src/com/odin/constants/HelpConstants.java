@@ -10,8 +10,9 @@ package com.odin.constants;
 public class HelpConstants {
 
 	public static final String PING_COMMMAND = "Ping Command Usage = !~ping";
-	public static final String DOWNLOAD_TRIGGER = "Download Trigger Usage = !~downloadtriggerfile <fileName>";
-	public static final String UPLOAD_TRIGGER = "Upload Trigger Usage = !~uploadtriggerfile <fileName>";
+	public static final String DOWNLOAD_TRIGGER = "Download Trigger Usage = !~gettriggerlist";
+	public static final String UPLOAD_TRIGGER = "Upload Trigger Usage = !~uploadtriggerfile <path>";
+	public static final String LIST_TRIGGER_FILES = "Upload Trigger Usage = !~listtriggerfiles <fileName>";
 	public static final String CREATE_MENTOR = "Create Mentor Usage = !~creatementor <name> <level> <job> <ilvl>";
 	public static final String DELETE_MENTOR = "Delete Mentor Usage = !~deletementor <name>"; 
 	public static final String LIST_MENTOR = "List Mentor Usage = !~listmentors <job>";

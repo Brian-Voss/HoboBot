@@ -10,6 +10,8 @@ import javax.security.auth.login.LoginException;
 import com.odin.commands.Commands;
 import com.odin.commands.HelpCommand;
 import com.odin.commands.PingCommand;
+import com.odin.commands.act.triggers.DownloadTriggerFileCommand;
+import com.odin.commands.act.triggers.UploadTriggerFileCommand;
 import com.odin.commands.parser.CommandParser;
 import com.odin.constants.BotConstants;
 import com.odin.constants.CommandConstants;
@@ -48,6 +50,8 @@ public class Main {
 		
 		commands.put(CommandConstants.PING_COMMAND,new PingCommand());
 		commands.put(CommandConstants.HELP_COMMAND,new HelpCommand());
+		commands.put(CommandConstants.UPLOAD_FILE_COMMAND,new UploadTriggerFileCommand());
+		commands.put(CommandConstants.DOWNLOAD_FILE_COMMAND,new DownloadTriggerFileCommand());
 		try {
 			 jda = jdaBuilder.buildBlocking();
 		} catch (LoginException e) {
