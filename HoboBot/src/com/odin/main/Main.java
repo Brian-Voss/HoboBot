@@ -12,6 +12,9 @@ import com.odin.commands.HelpCommand;
 import com.odin.commands.PingCommand;
 import com.odin.commands.act.triggers.DownloadTriggerFileCommand;
 import com.odin.commands.act.triggers.UploadTriggerFileCommand;
+import com.odin.commands.mentor.CreateMentorCommand;
+import com.odin.commands.mentor.DeleteMentorCommand;
+import com.odin.commands.mentor.ListMentorsCommand;
 import com.odin.commands.parser.CommandParser;
 import com.odin.constants.BotConstants;
 import com.odin.constants.CommandConstants;
@@ -52,6 +55,9 @@ public class Main {
 		commands.put(CommandConstants.HELP_COMMAND,new HelpCommand());
 		commands.put(CommandConstants.UPLOAD_FILE_COMMAND,new UploadTriggerFileCommand());
 		commands.put(CommandConstants.DOWNLOAD_FILE_COMMAND,new DownloadTriggerFileCommand());
+		commands.put(CommandConstants.LIST_MENTOR_COMMAND,new ListMentorsCommand());
+		commands.put(CommandConstants.CREATE_MENTOR_COMMAND,new CreateMentorCommand());
+		commands.put(CommandConstants.DELETE_MENTOR_COMMAND,new DeleteMentorCommand());
 		try {
 			 jda = jdaBuilder.buildBlocking();
 		} catch (LoginException e) {

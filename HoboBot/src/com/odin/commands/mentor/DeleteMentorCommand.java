@@ -1,5 +1,67 @@
+/**
+ * 
+ */
 package com.odin.commands.mentor;
 
-public class DeleteMentorCommand {
+import com.odin.commands.Commands;
+import com.odin.constants.HelpConstants;
+import com.odin.helpers.FileHelper;
+
+import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
+
+/**
+ * @author Brian
+ *
+ */
+public class DeleteMentorCommand extends Commands {
+
+	/* (non-Javadoc)
+	 * @see com.odin.commands.Commands#called(java.lang.String[], net.dv8tion.jda.core.events.message.MessageReceivedEvent)
+	 */
+	@Override
+	public boolean called(String[] args, MessageReceivedEvent event) {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.odin.commands.Commands#help()
+	 */
+	@Override
+	public String help() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.odin.commands.Commands#action(java.lang.String[], net.dv8tion.jda.core.events.message.MessageReceivedEvent)
+	 */
+	@Override
+	public void action(String[] args, MessageReceivedEvent event) {
+
+		if(args.length == 0)
+		{
+			event.getTextChannel().sendMessage("Arguments Required").queue();
+			event.getTextChannel().sendMessage(HelpConstants.DELETE_MENTOR).queue();
+			
+		}
+		else if(args.length == 1)
+		{
+			event.getTextChannel().sendMessage("Arguments Required").queue();
+			event.getTextChannel().sendMessage(HelpConstants.DELETE_MENTOR).queue();
+		}
+		else if(args.length == 2)
+		{
+			FileHelper fileHelper = new FileHelper();
+			fileHelper.removeMentorLineFromFile(args[0], args[1]);
+			event.getTextChannel().sendMessage("Mentor Removed").queue();
+		}
+		else if(args.length > 2)
+		{
+			event.getTextChannel().sendMessage("Too many arguments passed").queue();
+			event.getTextChannel().sendMessage(HelpConstants.DELETE_MENTOR).queue();
+		}
+
+	}
 
 }

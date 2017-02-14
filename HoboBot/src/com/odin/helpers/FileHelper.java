@@ -90,6 +90,55 @@ public class FileHelper {
 		
 		return fileUrls;
 	}
+	
+	public ArrayList<String> getMentorFile()
+	{
+		ArrayList<String> fileStrings = new ArrayList<>();
+		try {
+			BufferedReader br = new BufferedReader(new FileReader("mentors.txt"));
+			
+			  // read the first line from the text file
+	        String fileRead = br.readLine();
+
+	        // loop until all lines are read
+	        while (fileRead != null)
+	        {
+	        	fileStrings.add(fileRead);
+	        	fileRead = br.readLine();
+	        }
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return fileStrings;
+	}
+	
+	public void removeMentorLineFromFile(String name, String job)
+	{
+	
+			File file = new File("mentors.txt");
+			 try {
+			      String data= null;
+			      FileReader fr =new FileReader(file);
+			      BufferedReader br = new BufferedReader(fr);
+			      while((data=br.readLine())!= null) {
+			       
+			        if(data.contains(name) && data.contains(job)) {
+			        	data = "";
+			        	 br.close();
+	
+			        }
+			      }
+			      }
+			    catch (IOException e) {
+			        e.printStackTrace();
+			    }
+		
+			
+
+		
+	}
 	public  void parseFile()
 	{
 		try

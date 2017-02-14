@@ -13,7 +13,7 @@ public class HelpConstants {
 	public static final String DOWNLOAD_TRIGGER = "Download Trigger Usage = !~gettriggerlist";
 	public static final String UPLOAD_TRIGGER = "Upload Trigger Usage = !~uploadtriggerfile <drag and drop file>";
 	public static final String CREATE_MENTOR = "Create Mentor Usage = !~creatementor <name> <level> <job> <ilvl>";
-	public static final String DELETE_MENTOR = "Delete Mentor Usage = !~deletementor <name>"; 
+	public static final String DELETE_MENTOR = "Delete Mentor Usage = !~deletementor <name> <job>"; 
 	public static final String LIST_MENTOR = "List Mentor Usage = !~listmentors <job>";
 	public static final String ADD_RAID_MGR = "Add Raid Mgr Usage = !~addraidmgr <name>";
 	public static final String ADD_RAID_TIME = "Add Raid Time Usage = !~addraidtime <instance> <day of week> <level> <ilvl> <time> <timezone> <reminder y/n>";

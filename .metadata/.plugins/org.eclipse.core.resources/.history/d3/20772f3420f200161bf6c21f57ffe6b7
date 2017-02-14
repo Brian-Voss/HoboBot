@@ -1,0 +1,78 @@
+/**
+ * 
+ */
+package test;
+
+/**
+ * @author Brian
+ *
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+	      MortgagePaymentCalculator me = new MortgagePaymentCalculator();
+	      /**
+	       * Method from which all other methods are called
+	       */
+	  MenuExample menu = new MenuExample();
+	          char choice;
+
+	          do {
+	              menu.displayMenuText();
+	              System.out.println("Choice = " + choice);
+	              switch (choice) {
+	                  case 'A':
+	                      LC();
+	                      System.out.print("Enter loan amount: ");
+	                      int loanAmount = menu.scanner.nextInt();
+	         
+	                      System.out.print("Enter loan term (in years): ");
+	                      int termInYears = menu.scanner.nextInt();
+	         
+	                      System.out.print("Enter interest rate: ");
+	                      double interestRate = menu.scanner.nextDouble();
+	                      break;
+	                  case 'B':
+	                      FV();
+	                      /** insert stuff **/
+	                      break;
+	                  case 'C':
+	                      SG();
+	                      /** insert stuff **/
+	                      break;
+	                  case 'D':
+	                      break;
+	                  default:
+	                      System.out.println("I should never see this");
+	              }
+	          } while (choice != 'D');
+	      
+	        System.exit(0);
+
+	}
+
+	 /**
+     * The cheese method
+     */
+    private static void LC() {
+        System.out.println("Loans!");
+    }
+
+    /**
+     * The potato method
+     */
+    private static void FV() {
+        System.out.println("FV Calc!");
+    }
+
+    /**
+     * The moose method
+     */
+    private static void SG() {
+        System.out.println("SG Calc!");
+    }
+
+}

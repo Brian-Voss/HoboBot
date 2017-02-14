@@ -4,6 +4,8 @@
 package com.odin.commands.mentor;
 
 import com.odin.commands.Commands;
+import com.odin.constants.HelpConstants;
+import com.odin.handlers.FileHandler;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
@@ -19,7 +21,7 @@ public class CreateMentorCommand extends Commands {
 	@Override
 	public boolean called(String[] args, MessageReceivedEvent event) {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	/* (non-Javadoc)
@@ -36,8 +38,16 @@ public class CreateMentorCommand extends Commands {
 	 */
 	@Override
 	public void action(String[] args, MessageReceivedEvent event) {
-		// TODO Auto-generated method stub
-
+		FileHandler fileHandler = new FileHandler();
+		if(args.length != 4)
+		{
+			event.getTextChannel().sendMessage("Not all parameters were entered").queue();
+			event.getTextChannel().sendMessage(HelpConstants.CREATE_MENTOR).queue();
+			return;
+		}
+		
+		fileHandler.writeToMentorFile(args[0], args[1], args[2], args[3]);
+		event.getTextChannel().sendMessage("Mentor added").queue();
 	}
 
 }

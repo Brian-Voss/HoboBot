@@ -3,7 +3,10 @@
  */
 package com.odin.commands.mentor;
 
+import java.util.ArrayList;
+
 import com.odin.commands.Commands;
+import com.odin.helpers.FileHelper;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
@@ -19,7 +22,7 @@ public class ListMentorsCommand extends Commands {
 	@Override
 	public boolean called(String[] args, MessageReceivedEvent event) {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	/* (non-Javadoc)
@@ -36,8 +39,34 @@ public class ListMentorsCommand extends Commands {
 	 */
 	@Override
 	public void action(String[] args, MessageReceivedEvent event) {
-		// TODO Auto-generated method stub
-
+		FileHelper helper = new FileHelper();
+		ArrayList<String> mentors = helper.getMentorFile();
+		if(mentors.size() == 0)
+		{
+			
+			event.getTextChannel().sendMessage("No Mentors have signed up").queue();
+		}
+		else
+		{
+			boolean foundMentor = false;
+			for(String mentor : mentors)
+			{
+				if(args.length == 0)
+				{
+					event.getTextChannel().sendMessage(mentor).queue();
+					foundMentor = true;
+				}
+				else if(mentor.contains(args[0]))
+				{
+					event.getTextChannel().sendMessage(mentor).queue();
+					foundMentor = true;
+				}
+			}
+			if(!foundMentor)
+			{
+				event.getTextChannel().sendMessage("No Mentors have signed up for : " +args[0]).queue();
+			}
+		}
 	}
 
 }

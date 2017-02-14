@@ -32,7 +32,7 @@ public class FileHandler {
 			String filename= "triggers.txt";
 			final String newLine = System.getProperty("line.separator");
 			File file = new File(filename);
-			FileUtils.writeStringToFile(file, url + newLine, true);
+			FileUtils.writeStringToFile(file, url, true);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -40,6 +40,18 @@ public class FileHandler {
 		return true;
 	}
 	
-	
+	public boolean writeToMentorFile(String name, String level, String job, String ilvl)
+	{
+		try {
+			String filename= "mentors.txt";
+			final String newLine = System.getProperty("line.separator");
+			File file = new File(filename);
+			FileUtils.writeStringToFile(file,"Name: " + name + " Job: " + job + " Level: " + level + " iLvl: " + ilvl + newLine, true);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return true;
+	}
 
 }

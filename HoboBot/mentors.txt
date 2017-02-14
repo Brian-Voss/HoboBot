@@ -1,0 +1,2 @@
+Name: bobothehobo Job: war Level: 60 iLvl: 253
+Name: bobothehobo Job: blm Level: 60 iLvl: 260

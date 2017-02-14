@@ -1,0 +1,129 @@
+package test;
+
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.util.Scanner;
+
+public class MenuExample {
+
+	    /**
+	     * Constructor
+	     */
+	    public MenuExample() {
+	       
+	    }
+
+	    /**
+	     * Get a double from the user
+	     *
+	     * @return
+	     */
+	    
+
+	    /**
+	     * The display method
+	     */
+	    public String displayMenuText() {
+	        System.out.println("Please enter the letter for one of the following:");
+
+	        System.out.println("A. Loan Calculator");
+	        System.out.println("B. Future Value of Savings Calculator");
+	        System.out.println("C. Saving Goals Calculator");
+	        System.out.println("D. Exit");
+	        final Reader rdr = new InputStreamReader(System.in);
+	        final Scanner s = new Scanner(rdr);
+	        try {
+				while (true) {
+				    if (rdr.ready()) {
+				        return s.next().toString();
+				    } else {
+				       
+				    }
+				}
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+  
+	        return "";
+	    }
+
+	      // Scanner is a great class for getting 
+	      // console input from the user
+	       
+	      Scanner scanner = new Scanner(System.in);
+	    
+
+	    public Scanner getScanner() {
+			return scanner;
+		}
+
+		public void setScanner(Scanner scanner) {
+			this.scanner = scanner;
+		}
+
+		/**
+	     * The cheese method
+	     */
+	    private void LC() {
+	        System.out.println("Loans!");
+	    }
+
+	    /**
+	     * The potato method
+	     */
+	    private void FV() {
+	        System.out.println("FV Calc!");
+	    }
+
+	    /**
+	     * The moose method
+	     */
+	    private void SG() {
+	        System.out.println("SG Calc!");
+	    }
+
+	   
+
+	    /**
+	     * Method from which all other methods are called
+	     */
+	    public void perform() {
+	        char choice;
+
+	        do {
+	            choice = menu();
+	            System.out.println("Choice = " + choice);
+	            switch (choice) {
+	                case 'A':
+	                    LC();
+	                    System.out.print("Enter loan amount: ");
+	                    int loanAmount = scanner.nextInt();
+	       
+	                    System.out.print("Enter loan term (in years): ");
+	                    int termInYears = scanner.nextInt();
+	       
+	                    System.out.print("Enter interest rate: ");
+	                    double interestRate = scanner.nextDouble();
+	                    break;
+	                case 'B':
+	                    FV();
+	                    /** insert stuff **/
+	                    break;
+	                case 'C':
+	                    SG();
+	                    /** insert stuff **/
+	                    break;
+	                case 'D':
+	                    break;
+	                default:
+	                    System.out.println("I should never see this");
+	            }
+	        } while (choice != 'D');
+	    }
+
+	    private char menu() {
+	        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+	    }
+}

@@ -1,0 +1,100 @@
+/**
+ * 
+ */
+package test;
+
+import java.text.DecimalFormat;
+
+/**
+ * @author Brian
+ *
+ */
+public class Main {
+
+	
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+	      MortgagePaymentCalculator me = new MortgagePaymentCalculator();
+	      /**
+	       * Method from which all other methods are called
+	       */
+	  MenuExample menu = new MenuExample();
+	  char choice;
+
+	          do {
+	             String choiceStr =  menu.displayMenuText();
+	
+	              choice = choiceStr.charAt(0);
+	              System.out.println("Choice = " + choice);
+	              switch (choice) {
+	                  case 'A':
+	                      LC();
+	                      System.out.print("Enter loan amount: ");
+	                      int loanAmount = menu.getScanner().nextInt();
+	         
+	                      System.out.print("Enter loan term (in years): ");
+	                      int termInYears =menu.getScanner().nextInt();
+	         
+	                      System.out.print("Enter interest rate: ");
+	                      double interestRate = menu.getScanner().nextDouble();
+	                      
+	                      double payment = me.calculateMonthlyPayment(loanAmount, termInYears, interestRate);
+	                      DecimalFormat df = new DecimalFormat("#.##");
+	                     System.out.println("Your payment is: $"+ df.format(payment));
+	                      break;
+	                  case 'B':
+	                	  FV();
+                          System.out.print("Enter Payment: ");
+                          int FVPayment = menu.getScanner().nextDouble();
+
+                               System.out.print("Enter Term(s): ");
+                          double FVterm = menu.getScanner().nextDouble();
+                          
+                                System.out.print("Enter Annual Rate: ");
+                          int FVRate =menu.getScanner().nextInt();
+
+                          double FutureValue = me.calculateFutureValue(FVPayment, FVRate, FVterm);
+                              System.out.println("Your Future Value in $ is" + (FutureValue));
+                          break;
+	                      /** insert stuff **/
+	            
+	                  case 'C':
+	                      SG();
+	                      /** insert stuff **/
+	                      break;
+	                  case 'D':
+	                      break;
+	                  default:
+	                      System.out.println("I should never see this");
+	              }
+	          } while (choice!= 'D');
+	      
+	        System.exit(0);
+
+	}
+
+	 /**
+     * The cheese method
+     */
+    private static void LC() {
+        System.out.println("Loans!");
+    }
+
+    /**
+     * The potato method
+     */
+    private static void FV() {
+        System.out.println("FV Calc!");
+    }
+
+    /**
+     * The moose method
+     */
+    private static void SG() {
+        System.out.println("SG Calc!");
+    }
+
+}

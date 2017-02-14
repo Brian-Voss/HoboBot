@@ -1,0 +1,131 @@
+package test;
+
+import java.util.Scanner;
+
+public class MenuExample {
+
+	    private Scanner sc;
+
+	    /**
+	     * Constructor
+	     */
+	    public MenuExample() {
+	        sc = new Scanner(System.in);
+	    }
+
+	      // Scanner is a great class for getting 
+	      // console input from the user
+	       
+	      Scanner scanner = new Scanner(System.in);
+	    
+	    /**
+	     * Prompt for a value
+	     */
+	    private void promptValue(String category, double maximum) {
+	        System.out.println(category + ": Enter a value greater than zero and less than " + maximum);
+	    }
+
+	    /**
+	     * Get a double from the user
+	     *
+	     * @return
+	     */
+	    private double retrieveValue(String category, double maximum) {
+
+	        // Negative number is invalid
+	        double value = -1;
+	        promptValue(category, maximum);
+	        if (sc.hasNextDouble()) {
+	            value = sc.nextDouble();
+	        }
+	        sc.nextLine();
+	        while (value <= 0 || value > maximum) {
+	            promptValue(category, maximum);
+	            if (sc.hasNextDouble()) {
+	                value = sc.nextDouble();
+	            } else {
+	                value = -1;
+	            }
+	            sc.nextLine();
+	        }
+
+	        return value;
+	    }
+
+	    /**
+	     * The display method
+	     */
+	    private void displayMenuText() {
+	        System.out.println("Please enter the letter for one of the following:");
+
+	        System.out.println("A. Loan Calculator");
+	        System.out.println("B. Future Value of Savings Calculator");
+	        System.out.println("C. Saving Goals Calculator");
+	        System.out.println("D. Exit");
+
+	    }
+
+	    /**
+	     * The cheese method
+	     */
+	    private void LC() {
+	        System.out.println("Loans!");
+	    }
+
+	    /**
+	     * The potato method
+	     */
+	    private void FV() {
+	        System.out.println("FV Calc!");
+	    }
+
+	    /**
+	     * The moose method
+	     */
+	    private void SG() {
+	        System.out.println("SG Calc!");
+	    }
+
+	   
+
+	    /**
+	     * Method from which all other methods are called
+	     */
+	    public void perform() {
+	        char choice;
+
+	        do {
+	            choice = menu();
+	            System.out.println("Choice = " + choice);
+	            switch (choice) {
+	                case 'A':
+	                    LC();
+	                    System.out.print("Enter loan amount: ");
+	                    int loanAmount = scanner.nextInt();
+	       
+	                    System.out.print("Enter loan term (in years): ");
+	                    int termInYears = scanner.nextInt();
+	       
+	                    System.out.print("Enter interest rate: ");
+	                    double interestRate = scanner.nextDouble();
+	                    break;
+	                case 'B':
+	                    FV();
+	                    /** insert stuff **/
+	                    break;
+	                case 'C':
+	                    SG();
+	                    /** insert stuff **/
+	                    break;
+	                case 'D':
+	                    break;
+	                default:
+	                    System.out.println("I should never see this");
+	            }
+	        } while (choice != 'D');
+	    }
+
+	    private char menu() {
+	        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+	    }
+}
