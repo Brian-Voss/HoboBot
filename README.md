@@ -2,7 +2,7 @@
 A Discord bot for FFXVI 
 
 
-I built this Discord Bot for my FFXVI free company to manage the aspects of developing people new to the game and a centralized raiding scheduler. There are a ton of features that at the moment escape me.  Everything you will need is in the project.  
+I built this Discord Bot for my FFXVI free company to manage the aspects of developing people new to the game and a centralized raiding scheduler. There are a ton of features that at the moment escape me. Looking at HoboBot/src/com/odin/constants/HelpConstants.java will give you an idea of what it can do.  Everything you will need is in the project.  
 
 
 Want to use it?
