@@ -1,4 +1,4 @@
-# HoboBot - A Discord bot for FFXVI Free Companies
+# HoboBot - A Discord Bot for FFXVI Free Companies
 
 
 
