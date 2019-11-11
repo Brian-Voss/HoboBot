@@ -42,8 +42,6 @@ public class Main {
 	public static void main(String[] args) {
 
 		FileHelper fileHelper = new FileHelper();
-		//fileHelper.setFileLocation("C:\\Users\\Brian\\Documents\\My Games\\FINAL FANTASY XIV - A Realm Reborn\\FFXIV_CHR004000174A4E5ACE\\log");
-		
 		JDABuilder jdaBuilder = new JDABuilder(AccountType.BOT);
 		jdaBuilder.setToken(BotConstants.BOT_TOKEN);
 		jdaBuilder.setAudioEnabled(false);
@@ -73,10 +71,6 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
-		//fileHelper.cleanupLogFile(Calendar.getInstance());
-		//fileHelper.parseFile();
 	}
 
 	public static void handleCommand(CommandParser.CommandContainer cmd)
