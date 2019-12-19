@@ -16,7 +16,7 @@ public class PingCommand extends Commands {
 	 */
 	@Override
 	public boolean called(String[] args, MessageReceivedEvent event) {
-		// TODO Auto-generated method stub
+		
 		return true;
 	}
 
@@ -25,7 +25,7 @@ public class PingCommand extends Commands {
 	 */
 	@Override
 	public String help() {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
@@ -37,7 +37,7 @@ public class PingCommand extends Commands {
 		try {
 			event.getTextChannel().sendMessage("The Sleeping Hobo rolls over and farts" ).queue();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 

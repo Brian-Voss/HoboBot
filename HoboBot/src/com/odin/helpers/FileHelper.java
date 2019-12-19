@@ -48,7 +48,7 @@ public class FileHelper {
 
 	}
 
-	@SuppressWarnings("deprecation")
+	@SuppressWarnings({ "deprecation", "unlikely-arg-type" })
 	public static void displayTodaysFiles(File[] files) {
 		
 		Calendar today = Calendar.getInstance();
@@ -84,7 +84,6 @@ public class FileHelper {
 	        	fileRead = br.readLine();
 	        }
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -107,7 +106,6 @@ public class FileHelper {
 	        	fileRead = br.readLine();
 	        }
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

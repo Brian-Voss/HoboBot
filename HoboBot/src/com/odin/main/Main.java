@@ -41,7 +41,6 @@ public class Main {
 	
 	public static void main(String[] args) {
 
-		FileHelper fileHelper = new FileHelper();
 		JDABuilder jdaBuilder = new JDABuilder(AccountType.BOT);
 		jdaBuilder.setToken(BotConstants.BOT_TOKEN);
 		jdaBuilder.setAudioEnabled(false);
@@ -59,16 +58,16 @@ public class Main {
 		try {
 			 jda = jdaBuilder.buildBlocking();
 		} catch (LoginException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} catch (RateLimitedException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 	}

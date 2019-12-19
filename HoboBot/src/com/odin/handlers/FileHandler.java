@@ -24,6 +24,7 @@ public class FileHandler {
 		return files;
 	}
 	
+	@SuppressWarnings("deprecation")
 	public boolean writeToTriggerFile(String url, String directory)
 	{
 	
@@ -40,6 +41,7 @@ public class FileHandler {
 		return true;
 	}
 	
+	@SuppressWarnings("deprecation")
 	public boolean writeToMentorFile(String name, String level, String job, String ilvl)
 	{
 		try {
