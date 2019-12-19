@@ -21,7 +21,7 @@ public class HelpCommand extends Commands {
 	 */
 	@Override
 	public boolean called(String[] args, MessageReceivedEvent event) {
-		// TODO Auto-generated method stub
+		
 		return true;
 	}
 
@@ -30,7 +30,7 @@ public class HelpCommand extends Commands {
 	 */
 	@Override
 	public String help() {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
@@ -73,7 +73,7 @@ public class HelpCommand extends Commands {
 		try {
 			event.getTextChannel().sendMessage(commands).queue();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+		
 			e.printStackTrace();
 		}
 	}
