@@ -21,7 +21,6 @@ public class ListMentorsCommand extends Commands {
 	 */
 	@Override
 	public boolean called(String[] args, MessageReceivedEvent event) {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
@@ -30,7 +29,6 @@ public class ListMentorsCommand extends Commands {
 	 */
 	@Override
 	public String help() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
